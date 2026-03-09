@@ -45,4 +45,4 @@ Pada pilihan `Hapus` pada kelola proyek akan menghapus proyek yang sudah pernah 
 
 Di bawah ini adalah tampilan kelola proyek setelah proyek software dihapus.
 
-![kelola_proyek_postdelete](Assets/7_kelola_proyek_postdelete.png)
+![kelola_proyek_postdelete](Assets/8_kelola_proyek_postdelete.png)
