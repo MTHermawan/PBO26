@@ -273,7 +273,7 @@ public class Main {
 
     private void HapusSoftware(int id)
     {
-        System.out.println("Apakah Anda yakin ingin menghapus \"" + dataSoftware.get(id).nama + "\"? (y/n): ");
+        System.out.print("Apakah Anda yakin ingin menghapus \"" + dataSoftware.get(id).nama + "\"? (y/n): ");
         do { 
             _temp = input.nextLine();
             switch (_temp) {
