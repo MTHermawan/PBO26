@@ -38,7 +38,6 @@ public class Main {
             
             switch (_curMenu) {
                 case "menu_utama" -> MenuUtama();
-                case "menu_pengembang" -> MenuPengembang();
                 case "kelola_proyek" -> MenuKelolaSoftware();
                 default -> { _curMenu = "menu_utama";
                     System.out.println("Halaman tidak ditemukan...");
@@ -57,35 +56,6 @@ public class Main {
         System.out.println("———————————————————————————————————————————");
         System.out.println("Menu Utama");
         System.out.println();
-        System.out.println("1. Menu Toko");
-        System.out.println("2. Menu Pengembang");
-        System.out.println("———————————————————————————————————————————");
-        System.out.println("B > Kembali");
-        System.out.println("Q > Keluar");
-        System.out.println("===========================================");
-        
-        System.out.print("Masukkan pilihan: ");
-        _pilihan = input.nextLine();
-        switch (_pilihan) {
-            case "1" -> _curMenu = "menu_toko";
-            case "2" -> _curMenu = "menu_pengembang";
-            case "B", "b" -> Kembali();
-            case "Q", "q" -> _isExit = true;
-            default -> {
-                    System.out.print("Pilihan tidak valid!");
-                    input.nextLine();
-                }
-        }
-    }
-
-    private void MenuPengembang()
-    {
-        System.out.println("===========================================");
-        System.out.println("M1 > Menu Utama");
-        System.out.println("———————————————————————————————————————————");
-        System.out.println("Menu Pengembang");
-        System.out.println();
-        // System.out.println("1. Dashboard");
         System.out.println("1. Upload Proyek");
         System.out.println("2. Kelola Proyek");
         System.out.println("———————————————————————————————————————————");
