@@ -9,13 +9,13 @@ Di halaman ini, pengguna dapat memilih untuk melakukan upload atau mengelola pro
 
 ![menu_utama](Assets/1_menu_utama.png)
 
-### Upload Software
+### Upload Proyek
 
-Pada pilihan `Upload Software,` pengguna akan diarahkan ke dalam pertanyaan-pertanyaan mengenai data-data proyek yang akan dipublikasikannya. Jika pengguna berhasil melakukannya dengan benar, maka program akan memberikan informasi berhasil.
+Pada pilihan `Upload Proyek,` pengguna akan diarahkan ke dalam pertanyaan-pertanyaan mengenai data-data proyek yang akan dipublikasikannya. Jika pengguna berhasil melakukannya dengan benar, maka program akan memberikan informasi berhasil.
 
 ![upload_software](Assets/2_upload_software.png)
 
-### Kelola Software
+### Kelola Proyek
 
 Dengan proyek software yang sudah pernah dipublikasikan oleh pengguna sebelumnya, pengguna dapat mengelolanya kembali untuk diedit atau dihapus dengan memasukkan nama proyeknya.
 
