@@ -15,22 +15,14 @@ public class Games extends Proyek {
         this.genre = genre;
     }
 
-    public void SetGenre(String genre) {
-        this.genre.add(genre);
-    }
-
-    public void UnsetGenre(String genre) {
-        this.genre.remove(genre);
-    }
-
     public ArrayList<String> GetGenre() {
         return this.genre;
     }
 
-    public String GetGenreString() {
+    public String GetGenre(String separator) {
         String text = "";
         for (int i = 0; i < genre.size(); i++) {
-            text += genre.get(i) + (i < genre.size() - 1 ? ", " : "");
+            text += genre.get(i) + (i < genre.size() - 1 ? separator : "");
         }
         return text;
     }
@@ -38,6 +30,6 @@ public class Games extends Proyek {
     @Override
     public void TampilkanDetail() {
         super.TampilkanDetail();
-        System.out.println("Genre: " + GetGenreString());
+        System.out.println("Genre: " + GetGenre(", "));
     }
 }

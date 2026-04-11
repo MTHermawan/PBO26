@@ -313,6 +313,8 @@ public class Main {
             }
 
             for (Proyek findProyek : dataProyek) {
+                if (findProyek.GetNama().equals(p.GetNama())) continue;
+                
                 if (findProyek.GetNama().equals(_temp)) {
                     namaValid = false;
                 }
@@ -340,10 +342,10 @@ public class Main {
             do {
                 System.out.println();
                 System.out.println("Daftar Genre Game:");
-                System.out.println("1. Adventure" + (_genre.contains("Adventure") ? "(x)" : ""));
-                System.out.println("2. Action" + (_genre.contains("Action") ? "(x)" : ""));
-                System.out.println("3. RPG" + (_genre.contains("RPG") ? "(x)" : ""));
-                System.out.println("4. Shooter" + (_genre.contains("Shooter") ? "(x)" : ""));
+                System.out.println("1. Adventure " + (_genre.contains("Adventure") ? "(x)" : ""));
+                System.out.println("2. Action " + (_genre.contains("Action") ? "(x)" : ""));
+                System.out.println("3. RPG " + (_genre.contains("RPG") ? "(x)" : ""));
+                System.out.println("4. Shooter " + (_genre.contains("Shooter") ? "(x)" : ""));
                 System.out.println("0. (Selesaikan Pilihan)");
                 System.out.print("Masukkan pilihan klasifikasi: ");
                 _temp = input.nextLine();
@@ -372,9 +374,9 @@ public class Main {
 
                     if (!_choiceName.isBlank()) {
                         if (_genre.contains(_choiceName)) {
-                            g.UnsetGenre(_choiceName);
+                            _genre.remove(_choiceName);
                         } else {
-                            g.SetGenre(_choiceName);
+                            _genre.add(_choiceName);
                         }
                     }
             } while (!"0".equals(_temp));
@@ -387,11 +389,11 @@ public class Main {
 
             ao.SetTargetApps(_targetSoftware);
         } else if (p instanceof Tools t) {
-            System.out.print("Kategori Tools (\"" + t.getToolsKategori() + "\"): ");
+            System.out.print("Kategori Tools (\"" + t.GetToolsKategori() + "\"): ");
             _temp = input.nextLine();
-            String _kategoriFungsi = _temp.isBlank() ? t.getToolsKategori() : _temp;
+            String _kategoriFungsi = _temp.isBlank() ? t.GetToolsKategori() : _temp;
 
-            t.setToolsKategori(_kategoriFungsi);
+            t.SetToolsKategori(_kategoriFungsi);
         }
 
         p.SetNama(_namaProyek);
