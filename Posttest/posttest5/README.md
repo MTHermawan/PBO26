@@ -11,6 +11,7 @@ Di sini, method interface dari `TampilkanDetail()` menjadi method abstract di pr
 Di sini, method interface dari `InputAtributSpesial()` diimplementasikan pada setiap subclass, sehingga input atribut spesial dapat disesuaikan sesuai kebutuhan subclass. 
 
 ![pemanggilan_inputatributclass](Assets/13_pemanggilan_inputatributclass.png)
+![inputatributclass_addons](Assets/14_inputatributclass_addons.png)
 ![inputatributclass_tools](Assets/15_inputatributclass_tools.png)
 
 ## Deskripsi Program
