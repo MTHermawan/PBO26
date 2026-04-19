@@ -1,4 +1,4 @@
-public class Komik extends Buku{
+public class Komik extends Buku {
     String genre;
     Komik(String judul, int harga, String genre){
         super(judul,harga);
