@@ -13,20 +13,6 @@ Di sini, method interface dari `InputAtributSpesial()` diimplementasikan pada se
 ![pemanggilan_inputatributclass](Assets/13_pemanggilan_inputatributclass.png)
 ![inputatributclass_tools](Assets/15_inputatributclass_tools.png)
 
-### Polymorphysm Statis (Overloading)
-
-Penerapan overloading di sini digunakan untuk mengambil data genre untuk diload atau string yang menampilkan seluruh genre. 
-
-![penerapan_overriding](Assets/15_penerapan_overloading.png)
-
-Ketika method dipanggil tanpa argumen, maka method merupakan sebuah array string.
-
-![penerapan_overriding](Assets/16_pemanggilan_overloading_1.png)
-
-Sementara, ketika method dipanggil dengan satu argumen string, maka method menampilkan seluruh string yang terpisah berdasarkan argumen pertama.
-
-![penerapan_overriding](Assets/17_pemanggilan_overloading_2.png)
-
 ## Deskripsi Program
 
 Program ini bertujuan untuk para software engineer untuk mempublikasikan karya softwarenya dengan gratis atau pun berbayar. Di dalam program ini terdapat CRUD berupa Upload Proyek hingga memanajemen proyek yang dapat diedit dan dihapus. 
